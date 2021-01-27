@@ -16,7 +16,10 @@
 			ctx.fillRect(5, 5, 390, 290);
 			img.src = "image.jpg";
 			img.id = "img";
-			ctx.drawImage(img, 20, 20, 0, 0);
+			ctx.beginPath();
+			ctx.drawImage(img, 100, 100, 0, 0);
+			ctx.fillStyle = black;
+			ctx.stroke();
 
 			function inputEvent(e) {
 			  e.preventDefault();
