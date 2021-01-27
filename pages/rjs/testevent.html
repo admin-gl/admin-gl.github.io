@@ -5,7 +5,6 @@
 			#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
 			#navlist li,#navlist a{height:60px;display:block;}
 			#play{left:0px;width:47px;}
-			#play{background-image:url("image.png"); width: auto; height: auto;}
 			#play{background-image:url("image.png"); border:black; border-width: 10px; width:300px; height:300px!important; background-repeat:no-repeat; background-size:200px 200px}
 		</style>
 		<SCRIPT LANGUAGE="Javascript" SRC="point.js"></SCRIPT>
@@ -17,12 +16,12 @@
 			{
 				aCanvas=document.getElementById('myCanvas');
 			}
-			aCanvas.addEventListener("click", updateCanvas(e));
+			aCanvas.addEventListener("click", updateCanvas(e){
+				{
+					alert("x:"+e.clientX+" y:"+e.clientY);
+				}
+			});
 
-			function updateCanvas()
-			{
-				alert("x:"++" y:"+);
-			}
 		</script>
 	</head>
 	<body onload='init()'>
