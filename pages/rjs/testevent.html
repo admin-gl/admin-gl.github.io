@@ -12,16 +12,21 @@
 			var i=1;
 			var j=1;
 			var aCanvas;
+
 			function init()
 			{
 				aCanvas=document.getElementById('myCanvas');
+				let ctx = canvas.getContext("2d");
+				ctx.font = "30px Arial";
 			}
-			aCanvas.addEventListener("click", updateCanvas(e){
-				{
-					alert("x:"+e.clientX+" y:"+e.clientY);
-				}
-			});
+			aCanvas.addEventListener("click", updateCanvas(e));
 
+			function updateCanvas(event e)
+			{
+				ctx.fillText("clientX: " + e.clientX +
+    		" - clientY: " + e.clientY, 10, 50);
+
+			}
 		</script>
 	</head>
 	<body onload='init()'>
