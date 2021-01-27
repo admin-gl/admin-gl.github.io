@@ -1,16 +1,26 @@
 <html>
-	<body>
-		<script type="text/javascript">
-		let screenLog = document.querySelector('#screen-log');
-		document.addEventListener('mousemove', logKey);
+	<head>
+		<style type="text/css">
+			#navlist{position:relative;}
+			#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+			#navlist li,#navlist a{height:60px;display:block;}
+			#play{left:0px;width:47px;}
+		</style>
+		<script>
+			var aCanvas = document.getElementById('myCanvas');
+			var ctx = aCanvas.getContext('2d');
+			ctx.font = "30px Arial";
 
-		function logKey(e) {
-		  screenLog.innerText = `
-		    Screen X/Y: ${e.screenX}, ${e.screenY}
-		    Client X/Y: ${e.clientX}, ${e.clientY}`;
-		}
+			aCanvas.addEventListener("click", f(e){
+				alert(`clique`);
+			});
+
 		</script>
-<p>Move your mouse to see its position.</p>
-<p id="screen-log"></p>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="200" height="200"></canvas>
+		<ul id="navlist">
+			<p>J'en ai marre ?</p>
+		</ul>
 	</body>
 </html>
