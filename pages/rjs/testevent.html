@@ -15,11 +15,13 @@
 
 			var aCanvas = document.getElementById('canvas');
 			var ctx = aCanvas.getContext('2d');
+			ctx.font 0 "30px Arial";
 
 
 			aCanvas.addEventListener("click", updateCanvas(e){
-				ctx.fillText("clientX: " + e.clientX +
-    		" - clientY: " + e.clientY, 10, 50);
+				screenLog.innerText = `
+    			Screen X/Y: ${e.screenX}, ${e.screenY}
+    			Client X/Y: ${e.clientX}, ${e.clientY}`;
 			});
 
 		</script>
