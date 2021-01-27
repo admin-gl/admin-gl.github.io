@@ -18,13 +18,13 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  font-family: "Gill Sans", sans-serif;
+  color: #140E0E;
 }
 
 p, input, li {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  font-family: "Gill Sans", sans-serif;
+  color: #140E0E;
 }
 
 h1 {
@@ -57,7 +57,7 @@ nav, article, aside, footer {
 
 nav {
   height: 50px;
-  background-color: #ff80ff;
+  background-color: #CAD2E7;
   display: flex;
   margin-bottom: 10px;
 }
@@ -121,7 +121,7 @@ article {
 aside {
   flex: 1;
   margin-left: 10px;
-  background-color: #ff80ff;
+  background-color: #CAD2E7;
 }
 
 aside li {
