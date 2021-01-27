@@ -10,10 +10,12 @@
 			var aCanvas = document.getElementById('myCanvas');
 			var ctx = aCanvas.getContext('2d');
 			ctx.font = "30px Arial";
+			ctx.fillStyle = '#05EFFF';
+      ctx.fillRect(0, 0, 150, 100);
 
-			aCanvas.addEventListener("click", f(e){
+			aCanvas.addEventListener("click", f(){
 				faireUneAlerte;
-			});
+			}, false);
 
 		</script>
 	</head>
