@@ -13,12 +13,9 @@
 			var j=1;
 			var aCanvas;
 
-			function init()
-			{
-				aCanvas=document.getElementById('myCanvas');
-				var ctx = canvas.getContext("2d");
-				ctx.font = "30px Arial";
-			}
+			var aCanvas = document.getElementById('canvas');
+			var ctx = aCanvas.getContext('2d');
+
 
 			aCanvas.addEventListener("click", updateCanvas(e){
 				ctx.fillText("clientX: " + e.clientX +
@@ -27,7 +24,7 @@
 
 		</script>
 	</head>
-	<body onload='init()'>
+	<body>
 		<canvas id="myCanvas" width="200" height="200"></canvas>
 		<ul id="navlist">
 			<li
