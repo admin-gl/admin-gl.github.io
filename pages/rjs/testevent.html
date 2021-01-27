@@ -7,20 +7,30 @@
 			#play{left:0px;width:47px;}
 		</style>
 		<script>
-			var aCanvas = document.getElementById('myCanvas');
-			var ctx = aCanvas.getContext('2d');
-			ctx.font = "30px Arial";
-			ctx.fillStyle = '#05EFFF';
-      ctx.fillRect(0, 0, 150, 100);
+			var canvas = document.querySelector("canvas");
+			var ctx = canvas.getContext("2d");
+			var img = new Image();
+			var p = 1;
+			var c = arc(50,50,20,0,p*2*Math.PI,false);
+			ctx.fillStyle = "#B8E3F9";
+			ctx.fillRect(5, 5, 390, 290);
+			img.src = "image.jpg";
+			img.id = "img";
+			ctx.drawImage(img, 20, 20, 0, 0);
 
-			aCanvas.addEventListener("click", f(){
-				faireUneAlerte;
-			}, false);
+			function inputEvent(e) {
+			  e.preventDefault();
+			  e.stopPropagation();
+			  var input = e
+			  var canvasPosition = tonCanvas.getBoundingClientRect();
+			  var inputX = input.pageX - canvasPosition.left;
+			  var inputY = input.pageY - canvasPosition.top;
+			}
 
 		</script>
 	</head>
 	<body>
-		<canvas id="myCanvas" width="200" height="200"></canvas>
+		<canvas id="canvas" width="200" height="200"></canvas>
 		<ul id="navlist">
 			<p>J'en ai marre ?</p>
 		</ul>
