@@ -13,13 +13,10 @@
     }
 
     function count() {
-
-      while (c != 0){
-        elmt.write(<h1>c</h1>);
-        if (c === 0){
-          stop();
-        }
-        c--;
+      c--;
+      elmt.text(<h1>c</h1>);
+      if (c === 0){
+        stop();
       }
     }
 
