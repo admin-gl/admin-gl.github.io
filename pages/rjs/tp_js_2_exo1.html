@@ -5,6 +5,7 @@
   <title>compteur</title>
 
   <script>
+    var elmt = document.getElementById('my_box');
     var id;
     var c = 10;
     function init() {
@@ -12,7 +13,7 @@
     }
 
     function count() {
-      elmt = document.getElementById('my_box');
+
       while (c != 0){
         elmt.write(<h1>c</h1>);
         if (c === 0){
