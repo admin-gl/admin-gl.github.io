@@ -6,12 +6,12 @@
 
   <script>
     var id;
+    var c = 10;
     function init() {
       id = setInterval(count, 1000);
     }
 
     function count() {
-      var c = 10;
       elmt = document.getElementById('my_box');
       while (c != 0){
         elmt.write(c);
